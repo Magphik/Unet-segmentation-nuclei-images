@@ -35,6 +35,8 @@ Evaluate_model.py - a script with a model estimate, the Sørensen-Dyes
 coefficient is taken as an estimate and the result. 
 On the validation data it is 0.86
 
+Analyse.py - analyze the data
+
 The Sørensen–Dice coefficient (see below for other names) is a statistic used to gauge the 
 similarity of two samples.
 
