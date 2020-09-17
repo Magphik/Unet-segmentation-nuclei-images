@@ -11,7 +11,7 @@ import preprocess_data
 IMG_WIDTH = 128
 IMG_HEIGHT = 128
 IMG_CHANNELS = 3
-TRAIN_PATH = r'C:\Users\user\PycharmProjects\project_quantum\data\stage1_train/'
+TRAIN_PATH = '.\data\stage1_train/'
 X, Y = preprocess_data.get_X_Y(IMG_HEIGHT=IMG_HEIGHT, IMG_WIDTH=IMG_WIDTH, TRAIN_PATH = TRAIN_PATH)
 X_train, X_test, Y_train, Y_test = preprocess_data.split_data(X, Y)
 img_avg = np.zeros((Y.shape[0], IMG_HEIGHT, IMG_WIDTH, 1), dtype=np.bool)
