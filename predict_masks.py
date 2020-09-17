@@ -39,10 +39,11 @@ def make_predictions():
     # model.save_weights(checkpoint_path)
     model.load_weights(checkpoint_path)
     predict_masks_X = model.predict(X_test)
-def save_predicted_imgs():
+    return predict_masks_X
+def save_predicted_imgs(predict_masks):
 
-    for i in range(predict_masks_X.shape[0]):
-        rgb_pred = cv2.cvtColor(predict_masks_X[i], cv2.COLOR_GRAY2RGB)
+    for i in range(predict_masks.shape[0]):
+        rgb_pred = cv2.cvtColor(predict_masks[i], cv2.COLOR_GRAY2RGB)
         # imshow(rgb_pred)
         # plt.show()
 
@@ -74,4 +75,6 @@ def display_pred_imgs():
         img = cv2.imread(filename)
         imshow(img)
         plt.show()
+X_pred = make_predictions()
+save_predicted_imgs(X_pred)
 display_pred_imgs()
