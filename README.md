@@ -13,7 +13,7 @@ path.
 
 Unet-segmentation contains next scripts:
 
-Preprocessed_data.py - A script with a preprocessing function for a training set, 
+Preprocess_data.py - A script with a preprocessing function for a training set, 
 converting a 3-channel image into a single-channel image and a function for splitting into 
 training and validation samples.
 
