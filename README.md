@@ -30,7 +30,8 @@ the network will load the weights that we have trained, make a prediction and ou
 and also calculate the estimate by the Sørensen-Dyes coefficient.
 
 Evaluate_model.py - a script with a model estimate, the Sørensen-Dyes 
-coefficient is taken as an estimate and the result.
+coefficient is taken as an estimate and the result. 
+On the validation data it is 0.86
 
 The Sørensen–Dice coefficient (see below for other names) is a statistic used to gauge the 
 similarity of two samples.
