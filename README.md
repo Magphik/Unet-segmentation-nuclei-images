@@ -13,6 +13,8 @@ path.
 
 Unet-segmentation contains next scripts:
 
+Notation:  write your absolute path to data files
+
 Preprocess_data.py - A script with a preprocessing function for a training set, 
 converting a 3-channel image into a single-channel image and a function for splitting into 
 training and validation samples.
